@@ -2,6 +2,7 @@ import win32com.client as client
 outlook = client.Dispatch("Outlook.Application")
 message = outlook.CreateItem(0)
 
+message.SentOnBehalfOfName = 'prueba269@oulook.es'
 message.Subject = "¿Cuál es la diferencia entre tesis y tesina?"
 message.Body = '''Saludos,\n
 

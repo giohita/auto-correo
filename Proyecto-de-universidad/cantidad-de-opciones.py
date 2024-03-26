@@ -6,6 +6,7 @@ message = outlook.CreateItem(0)
 opciones_path = pathlib.Path("opciones.pdf")
 opciones_absolute = str(opciones_path.absolute())
 
+message.SentOnBehalfOfName = 'prueba269@oulook.es'
 message.Attachments.Add(opciones_absolute)
 message.Subject = "¿Qué sigue cuando termine las materias de mi maestría?"
 message.Body = '''Saludos,\n
